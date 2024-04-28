@@ -1,0 +1,18 @@
+@import '../../variables.scss';
+
+.CharacteristicList {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: $s $m;
+
+    .CharacteristicListName {
+        grid-column: 1;
+        @include text-s;
+    }
+
+    .CharacteristicListValue {
+        grid-column: 2;
+        @include text-m;
+        @include text-ellipsis;
+    }
+}

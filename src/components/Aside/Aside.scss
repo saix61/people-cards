@@ -1,0 +1,25 @@
+@import '../../variables.scss';
+
+.Aside {
+    flex: 1 0 auto;
+    width: 332px;
+    padding: $xl;
+    background: $cardBackground;
+    border-radius: $borderRadius;
+    border: 1px solid $cardBackground;
+
+    .AsideTitle {
+        @include text-xl;
+    }
+
+    .AsideSubTitle {
+        @include text-l;
+        margin-bottom: $l;
+    }
+
+    .AsideLine {
+        height: 1px;
+        background: $line;
+        margin: $xl 0;
+    }
+}

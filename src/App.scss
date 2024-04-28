@@ -1,0 +1,7 @@
+@import './variables.scss';
+
+.App {
+    padding: $xxl;
+    display: flex;
+    gap: $l;
+}

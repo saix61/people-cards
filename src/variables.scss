@@ -1,0 +1,58 @@
+// colors
+$light: #DCD8D3;
+$gray: #8C8988;
+$rootBackground: #1E1E1E;
+$asideBackground: #1E2027;
+$accent: #CF7B5A;
+$accent_ghost: #CF7B5A33;
+$inputsBackground: #1E2027;
+$cardBackground: #1A1C23;
+$cardBackground_active: #1E2027;
+$red: #FF2C47;
+$red_ghost: #ff2c4833;
+$line: #303238;
+
+// spaces
+$xs: 10px;
+$s: 12px;
+$m: 16px;
+$l: 20px;
+$xl: 24px;
+$xxl: 32px;
+
+// rest
+$imageSize: 56px;
+$borderRadius: 16px;
+
+// text
+
+@mixin text-s {
+  color: $gray;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+@mixin text-m {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+@mixin text-l {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+@mixin text-xl {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+@mixin text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
