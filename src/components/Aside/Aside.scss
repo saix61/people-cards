@@ -4,12 +4,12 @@
     flex: 1 0 auto;
     width: 332px;
     padding: $xl;
-    background: $cardBackground;
+    background: $asideBackground;
     border-radius: $borderRadius;
-    border: 1px solid $cardBackground;
 
     .AsideTitle {
         @include text-xl;
+        margin-bottom: $xl;
     }
 
     .AsideSubTitle {

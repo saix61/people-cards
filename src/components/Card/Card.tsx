@@ -7,7 +7,7 @@ import { CharacteristicList } from '@Components/CharactiristicList';
 const getCorrectDate = (date: string): string => {
     const dateObject = new Date(date);
     const options: Intl.DateTimeFormatOptions = { day: 'numeric', month: 'long', year: 'numeric' };
-    return dateObject.toLocaleDateString('en-EN', options);
+    return dateObject.toLocaleDateString('en-GB', options);
 }
 
 export const Card: React.FC<TCard> = memo((props) => {
@@ -36,15 +36,11 @@ export const Card: React.FC<TCard> = memo((props) => {
         props.location.country,
     ]);
 
-    const CharacteristicListProps = useMemo(() => [
+    const CharacteristicListProps = [
         { key: 'Phone No', value: props.phone },
         { key: 'Birthday', value: formattedDate },
         { key: 'Address', value: address },
-    ], [
-        props.phone,
-        formattedDate,
-        address
-    ]);
+    ];
 
     const onCardClick = () => setCardState(state => !state);
 

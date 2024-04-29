@@ -8,14 +8,10 @@ export const CardList: React.FC<TCardList<TCard>> = memo((props) => {
     const [visibleCount, setVisibleCount] = useState<number>(50);
     const loaderRef = useRef<HTMLDivElement | null>(null);
 
-    const loadMore = () => {
-        setVisibleCount(prevCount => prevCount + 50);
-    };
-
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
             if (entries[0].isIntersecting) {
-                loadMore();
+                setVisibleCount(prevCount => prevCount + 50);
             }
         }, { threshold: 1 });
 
