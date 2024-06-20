@@ -16,3 +16,5 @@
 - clsx
 - SCSS (SASS)
 - ESLint / Prettier
+
+![image](https://github.com/saix61/people-cards/assets/27074031/55365a48-73ac-4a0d-9b1d-c63b77d7b366)
